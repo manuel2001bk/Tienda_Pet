@@ -5,6 +5,7 @@ import 'package:tienda_pet_movil/Pages/HomeView/screens/bannerNombre.dart';
 import 'package:tienda_pet_movil/Pages/HomeView/screens/barraBusqueda.dart';
 import 'package:tienda_pet_movil/Pages/HomeView/screens/listProductos.dart';
 import 'package:tienda_pet_movil/Pages/HomeView/screens/listServicios.dart';
+import 'package:tienda_pet_movil/Pages/HomeView/screens/slider_widget.dart';
 import 'package:tienda_pet_movil/Pages/HomeView/screens/tarjetaSeciones.dart';
 
 class HomeView extends StatefulWidget {
@@ -33,9 +34,7 @@ class _HomeViewState extends State<HomeView> {
           BannerMascota(),
           TajetasProductosServicios(),
           BarraBusqueda(),
-          Card(
-            child: Image.asset('assets/images/a2.jpg'),
-          ),
+          Carousel(),
           ListaProductos(),
           ListaServicios(),
         ],

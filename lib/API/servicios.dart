@@ -3,7 +3,6 @@ import 'package:http/http.dart' as http;
 
 import '../Models/user.dart';
 
-
 const path = 'http://desarrollovan-tis.dedyn.io:4010/api/User/';
 
 Future singUp(name, email, password) async {
@@ -106,14 +105,11 @@ Future updatePassword(password) async {
   return null;
 }
 
-Future  getImagesCarrousel() async {
-  Uri url = Uri.parse(
-      "http://desarrollovan-tis.dedyn.io:4030/GetImagesCarousel");
+Future getImagesCarrousel() async {
+  Uri url =
+      Uri.parse("http://desarrollovan-tis.dedyn.io:4030/GetImagesCarousel");
 
-  Map data = {
-    "idChannel": 1,
-    "email": email,
-  };
+  Map data = {"idChannel": 2};
 
   String jsonObject = json.encode(data);
   var response = await http.post(url,
@@ -123,7 +119,7 @@ Future  getImagesCarrousel() async {
       body: jsonObject);
   if (response.body.isNotEmpty) {
     var responseBody = json.decode(response.body);
-    return responseBody;
+    return responseBody.dtoImageCarousels;
   }
   return null;
 }
