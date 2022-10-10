@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "457031073270",
+    "project_id": "tienda-pet-movil",
+    "storage_bucket": "tienda-pet-movil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457031073270:android:a7aab66b42a61a1aaedbd7",
+        "android_client_info": {
+          "package_name": "com.example.tienda_pet_movil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457031073270-l0b63df4sfq9sna46n0q89utpm5ttppv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC4RnMjU2_NxqBMovfOxh_9OAjZdYoBPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457031073270-l0b63df4sfq9sna46n0q89utpm5ttppv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
